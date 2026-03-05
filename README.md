@@ -1,12 +1,12 @@
 # ncspot-rpc
-> Discord Rich Presence (RPC) adapter for [ncspot](https://github.com/hrkfdn/ncspot)
+> Discord Rich Presence Client (RPC) adapter for [ncspot](https://github.com/hrkfdn/ncspot)
 
 A simple, semi-lightweight, python based extension to display [ncspot](https://github.com/hrkfdn/ncspot) data from a socket to your Discord Profile using Discords RPC Protocol and PyPresence.
 
 ## Why?
 By default, ncspot does not interact with the Discord RPC, nor does it natively support it. This program acts a middleman and adapter for that missing bridge. For people who want to show what their playing to their friends on Discord, this program also serves as a replacement for several similar projects that are no longer supported or outdated. 
 
-The program acts a daemon you launch from a command-line. We recommend you put it in your `.xinitrc` (for X11) or `~/.config/hypr/hyprland.conf` as an `exec-once` entry (Hyprland), or as your system requires.
+The program acts a daemon you launch from a command-line using `ncspot-rpc`. We recommend you put it in your `.xinitrc` (for X11) or `~/.config/hypr/hyprland.conf` as an `exec-once` entry (Hyprland), or as your system requires.
 
 ## Prerequisites
 - [Discord Client](https://discord.com) or [Vesktop/Vencord](https://vencord.dev)
@@ -20,7 +20,7 @@ The program acts a daemon you launch from a command-line. We recommend you put i
 
 
 ## Installation
-A PyPI package is in the works, hang with us while we get it up!
+We recommend installing with ![pipx](https://pipx.pypa.io/latest/installation/) for the most stable version. To install with pipx, run the commmand `pipx install ncspot-rpc`, This is the only supported installed method currently, we will not provide support for other package mirrors until a later date.
 
 ## Documentation
 To view the documentation we currently have available, use the hyperlinks below.
