@@ -14,10 +14,10 @@ The program acts a daemon you launch from a command-line. We recommend you put i
 - **Linux** or Unix Based System *(Linux is the only platform we currently support, future compatibility expected in another update)*
 
 ## Examples
-![Example 1](https://github.com/linuxlarp/ncspot-rpc/blob/main/docs/static/showcase1.png)
-![Example 2](https://github.com/linuxlarp/ncspot-rpc/blob/main/docs/static/showcase2.png)
-
-![Example 3 **Now with customization options...**](https://github.com/linuxlarp/ncspot-rpc/tree/main/docs/static/showcase3.png)
+![Higlight](https://raw.githubusercontent.com/linuxlarp/ncspot-rpc/refs/heads/main/docs/static/concept.png)
+![Example 1](https://raw.github.com/linuxlarp/ncspot-rpc/blob/main/docs/static/showcase1.png)
+![Example 2](https://raw.githubusercontent.com/linuxlarp/ncspot-rpc/refs/heads/main/docs/static/showcase2.png)
+![Example 3](https://raw.githubusercontent.com/linuxlarp/ncspot-rpc/refs/heads/main/docs/static/showcase3.png)
 
 
 ## Installation
