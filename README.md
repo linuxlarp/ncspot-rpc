@@ -25,9 +25,9 @@ A PyPI package is in the works, hang with us while we get it up!
 ## Documentation
 To view the documentation we currently have available, use the hyperlinks below.
 
-![Settings / Configuration Guide](https://github.com/linuxlarp/ncspot-rpc/blob/main/docs/SETTING_CONFIG.md)
-![Custom Discord Client](https://github.com/linuxlarp/ncspot-rpc/blob/main/docs/CUSTOM_CLIENT.md)
-![For Contributors / Developers](https://github.com/linuxlarp/ncspot-rpc/blob/main/docs/TECH_OVERVIEW.md)
+- ![**Configuration Guide**](https://github.com/linuxlarp/ncspot-rpc/blob/main/docs/SETTING_CONFIG.md)
+- ![**Custom Discord Client**](https://github.com/linuxlarp/ncspot-rpc/blob/main/docs/CUSTOM_CLIENT.md)
+- ![**Tech Overview**](https://github.com/linuxlarp/ncspot-rpc/blob/main/docs/TECH_OVERVIEW.md)
 
 ## Credits
 The following resources, and repositories contributed, helped or served as inspiration to the development of this project:
