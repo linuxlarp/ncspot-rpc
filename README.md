@@ -1,8 +1,7 @@
 # ncspot-rpc
 > Discord Rich Presence (RPC) adapter for [ncspot](https://github.com/hrkfdn/ncspot)
 
-A simple, lightweight, python based extension to display [ncspot](https://github.com/hrkfdn/ncspot) data from a socket to your Discord Profile using Discords RPC Protocol and PyPresence.
-
+A simple, semi-lightweight, python based extension to display [ncspot](https://github.com/hrkfdn/ncspot) data from a socket to your Discord Profile using Discords RPC Protocol and PyPresence.
 
 ## Why?
 By default, ncspot does not interact with the Discord RPC, nor does it natively support it. This program acts a middleman and adapter for that missing bridge. For people who want to show what their playing to their friends on Discord, this program also serves as a replacement for several similar projects that are no longer supported or outdated. 
@@ -18,10 +17,11 @@ The program acts a daemon you launch from a command-line. We recommend you put i
 ![Example 1](https://github.com/linuxlarp/ncspot-rpc/blob/main/docs/static/showcase1.png)
 ![Example 2](https://github.com/linuxlarp/ncspot-rpc/blob/main/docs/static/showcase2.png)
 
-![Example 3 **Now with customization options...**](https://github.com/linuxlarp/ncspot-rpc/tree/main/docs/static)
+![Example 3 **Now with customization options...**](https://github.com/linuxlarp/ncspot-rpc/tree/main/docs/static/showcase3.png)
+
 
 ## Installation
-A PyPI package is in the works, hang with us while we get it up.
+A PyPI package is in the works, hang with us while we get it up!
 
 ## Documentation
 To view the documentation we currently have available, use the hyperlinks below.
