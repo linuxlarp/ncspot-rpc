@@ -15,9 +15,8 @@ The program acts a daemon you launch from a command-line. We recommend you put i
 
 ## Examples
 ![Higlight](https://raw.githubusercontent.com/linuxlarp/ncspot-rpc/refs/heads/main/docs/static/concept.png)
-![Example 1](https://raw.github.com/linuxlarp/ncspot-rpc/blob/main/docs/static/showcase1.png)
-![Example 2](https://raw.githubusercontent.com/linuxlarp/ncspot-rpc/refs/heads/main/docs/static/showcase2.png)
-![Example 3](https://raw.githubusercontent.com/linuxlarp/ncspot-rpc/refs/heads/main/docs/static/showcase3.png)
+![Example](https://raw.githubusercontent.com/linuxlarp/ncspot-rpc/refs/heads/main/docs/static/showcase3.png)
+![Example Fullscreen](https://raw.githubusercontent.com/linuxlarp/ncspot-rpc/refs/heads/main/docs/static/showcase1.png)
 
 
 ## Installation
@@ -26,7 +25,9 @@ A PyPI package is in the works, hang with us while we get it up!
 ## Documentation
 To view the documentation we currently have available, use the hyperlinks below.
 
-**WIP**
+![Settings / Configuration Guide](https://github.com/linuxlarp/ncspot-rpc/blob/main/docs/SETTING_CONFIG.md)
+![Custom Discord Client](https://github.com/linuxlarp/ncspot-rpc/blob/main/docs/CUSTOM_CLIENT.md)
+![For Contributors / Developers](https://github.com/linuxlarp/ncspot-rpc/blob/main/docs/TECH_OVERVIEW.md)
 
 ## Credits
 The following resources, and repositories contributed, helped or served as inspiration to the development of this project:
