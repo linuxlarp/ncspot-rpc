@@ -1,4 +1,9 @@
 # ncspot-rpc
+![PyPI Version](https://img.shields.io/pypi/v/ncspot-rpc)
+![Python Version](https://img.shields.io/pypi/pyversions/ncspot-rpc)
+![License](https://img.shields.io/github/license/linuxlarp/ncspot-rpc)
+![Stars](https://img.shields.io/github/stars/linuxlarp/ncspot-rpc)
+
 > Discord Rich Presence Client (RPC) adapter for [ncspot](https://github.com/hrkfdn/ncspot)
 
 A simple, semi-lightweight, python based extension to display [ncspot](https://github.com/hrkfdn/ncspot) data from a socket to your Discord Profile using Discords RPC Protocol and PyPresence.
@@ -20,7 +25,14 @@ The program acts a daemon you launch from a command-line using `ncspot-rpc`. We 
 
 
 ## Installation
-We recommend installing with ![pipx](https://pipx.pypa.io/latest/installation/) for the most stable version. To install with pipx, run the commmand `pipx install ncspot-rpc`, This is the only supported installed method currently, we will not provide support for other package mirrors until a later date.
+
+We recommend installing via [pipx](https://pipx.pypa.io/latest/installation/) for the best experience.
+
+```bash
+pipx install ncspot-rpc
+```
+
+> Other installation methods are not officially supported at this time.
 
 ## Documentation
 To view the documentation we currently have available, use the hyperlinks below.
