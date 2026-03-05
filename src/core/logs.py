@@ -1,6 +1,4 @@
-import datetime
 import json
-import logging
 import traceback
 from pathlib import Path
 
@@ -20,6 +18,7 @@ class Logger:
             "info": (Fore.BLUE + Style.BRIGHT, "INFO"),
             "success": (Fore.GREEN + Style.BRIGHT, "SUCCESS"),
             "debug": (Fore.WHITE + Style.DIM, "DEBUG"),
+            "tip": (Fore.LIGHTRED_EX + Style.BRIGHT, "[TIP]"),
         }
 
     def _log(self, level: str, message: str, data=None):
@@ -56,6 +55,9 @@ class Logger:
 
     def success(self, m, d=None):
         self._log("success", m, d)
+
+    def tip(self, m, d=None):
+        self._log("tip", m, d)
 
     def debug(self, m, d=None):
         if config.basic.DEBUG is True:

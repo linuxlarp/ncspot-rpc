@@ -1,8 +1,6 @@
 import json
 import os
 import socket
-import time
-from multiprocessing import Array
 
 import inotify.adapters
 
@@ -21,7 +19,6 @@ class ListenerSocket:
 
     def start_sock(self):
         sock_name = os.path.basename(self.sock_path)
-        self.logs.info("Waiting for socket file to appear...")
 
         if not os.path.exists(self.sock_path):
             i = inotify.adapters.Inotify()
@@ -31,7 +28,6 @@ class ListenerSocket:
                 if filename == sock_name and "IN_CREATE" in type_names:
                     break
 
-        self.logs.info("Socket file found, attempting connection...")
         self.connect_sock()
 
     def connect_sock(self):
@@ -60,7 +56,7 @@ class ListenerSocket:
         while True:
             data = self.client.recv(1024).decode("utf-8")
             if not data:
-                self.logs.warn("Connection closed by server")
+                self.logs.error("Connection closed by server")
                 break
 
             self.logs.debug(f"Recv: {data}")

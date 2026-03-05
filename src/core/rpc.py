@@ -22,15 +22,16 @@ class RPC:
 
         while True:
             try:
-                self.logs.info("Attempting to connect to Discord RPC...")
                 self.client.connect()
-                self.logs.success("Successfully connected to RPC!")
-                self.logs.info("Play a song! We should be displaying content now.")
+                self.logs.success("Successfully connected to Discord RPC!")
+                self.logs.tip(
+                    "Play a song via your terminal and check your profile! It should be displaying content!"
+                )
                 break
             except Exception as e:
                 if isinstance(e, DiscordNotFound):
                     self.logs.warn(
-                        "Discord isnt running! Will wait until we're able to reconnect"
+                        "Discord isn't running! Waiting until IPC reappears."
                     )
 
                     self._wait_for_ipc()

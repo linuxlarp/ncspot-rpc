@@ -1,7 +1,7 @@
-from enum import Enum
 from typing import List, Optional
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
+from pypresence import ActivityType
 
 
 class ModeDetails(BaseModel):
