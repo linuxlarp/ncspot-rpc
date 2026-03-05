@@ -1,6 +1,6 @@
 [project]
 name = "ncspot-rpc"
-version = "1.0.3"
+version = "1.0.4"
 description = "Discord Rich Presence adapter for ncspot"
 readme = "README.md"
 license = { file = "LICENSE"}
@@ -20,6 +20,9 @@ dependencies = [
 
 [project.scripts]
 ncspot-rpc = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
