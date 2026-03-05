@@ -1,7 +1,9 @@
 [project]
 name = "ncspot-rpc"
-version = "1.0.0"
+version = "1.0.1"
 description = "Discord Rich Presence adapter for ncspot"
+readme = "README.md"
+license = { file = "LICENSE"}
 requires-python = ">=3.10"
 dependencies = [
     "pypresence",
@@ -21,3 +23,8 @@ where = ["src"]
 
 [tool.setuptools.package-data]
 "*" = ["config.toml"]
+
+[project.urls]
+Homepage = "https://github.com/linuxlarp/ncspot-rpc"
+Repository = "https://github.com/linuxlarp/ncspot-rpc"
+Issues = "https://github.com/linuxlarp/ncspot-rpc/issues"
