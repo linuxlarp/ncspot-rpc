@@ -15,9 +15,10 @@ The program acts a daemon you launch from a command-line. We recommend you put i
 - **Linux** or Unix Based System *(Linux is the only platform we currently support, future compatibility expected in another update)*
 
 ## Examples
-![Full example](https://github.com/linuxlarp/ncspot-discord/blob/main/STATIC/DEMO1.png)
-![Removing player icon](https://github.com/linuxlarp/ncspot-discord/blob/main/STATIC/DEMO2.png)
-![Removing timestamp](https://github.com/linuxlarp/ncspot-discord/blob/main/STATIC/DEMO3.png)
+![Example 1](https://github.com/linuxlarp/ncspot-rpc/blob/main/docs/static/showcase1.png)
+![Example 2](https://github.com/linuxlarp/ncspot-rpc/blob/main/docs/static/showcase2.png)
+
+![Example 3 **Now with customization options...**](https://github.com/linuxlarp/ncspot-rpc/tree/main/docs/static)
 
 ## Installation
 A PyPI package is in the works, hang with us while we get it up.
