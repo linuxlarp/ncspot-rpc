@@ -11,8 +11,8 @@ import core.rpc as discord
 
 
 class ListenerSocket:
-    def __init__(self) -> None:
-        self.config = config.basic
+    def __init__(self, basic: config.Basic) -> None:
+        self.config = basic
         self.logs = logger.Logger()
         self.client: socket.socket = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
         self.sock_path = os.path.join(self.config.RUNTIME_PATH, "ncspot.sock")
@@ -32,7 +32,7 @@ class ListenerSocket:
 
     def connect_sock(self):
         try:
-            self.RPC = discord.RPC()
+            self.RPC = discord.RPC(self.config)
         except Exception as e:
             self.logs.error("Failed to launch Discord RPC Client!", e)
             return

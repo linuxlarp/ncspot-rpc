@@ -6,7 +6,7 @@ import tomllib
 import core.logs as logger
 
 CONFIG_PATH = pathlib.Path("~/.config/ncspot-rpc/config.toml").expanduser()
-EXAMPLE_PATH = pathlib.Path(__file__).parent.parent / "config.toml"
+EXAMPLE_PATH = pathlib
 
 
 class Basic:
@@ -30,7 +30,13 @@ class Basic:
         )
 
     def _ensure_config(self):
+        self.logs.debug(f"CONFIG_PATH resolves to: {CONFIG_PATH}")
+        self.logs.debug(f"EXAMPLE_PATH resolves to: {EXAMPLE_PATH}")
+        self.logs.debug(f"Config exists: {CONFIG_PATH.exists()}")
+
         if not CONFIG_PATH.exists():
+            self.logs.debug("COPYING NOW!")
+
             CONFIG_PATH.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy(EXAMPLE_PATH, CONFIG_PATH)
 
@@ -45,6 +51,3 @@ class Basic:
 
         self.logs.success("Config successfully loaded.")
         return data
-
-
-basic = Basic()

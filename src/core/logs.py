@@ -1,17 +1,17 @@
 import json
 import traceback
 from pathlib import Path
+from typing import Optional
 
 from colorama import Back, Fore, Style
 from colorama import init as colorama_init
-
-import core.config as config
 
 colorama_init(autoreset=True)
 
 
 class Logger:
-    def __init__(self):
+    def __init__(self, config=None):
+        self.config = config
         self.levels = {
             "error": (Fore.RED + Style.BRIGHT, "ERROR"),
             "warn": (Fore.YELLOW + Style.BRIGHT, "WARN"),
@@ -60,5 +60,5 @@ class Logger:
         self._log("tip", m, d)
 
     def debug(self, m, d=None):
-        if config.basic.DEBUG is True:
+        if self.config and self.config.DEBUG:
             self._log("debug", m, d)

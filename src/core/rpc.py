@@ -13,8 +13,8 @@ import core.models as models
 
 
 class RPC:
-    def __init__(self) -> None:
-        self.config = config.basic
+    def __init__(self, basic: config.Basic) -> None:
+        self.config = basic
         self.logs = logger.Logger()
 
         self.client_id = self.config.API_CLIENT_ID
@@ -46,7 +46,6 @@ class RPC:
 
             if track is not None:
                 player_name = "ncspot"
-                small_image = player_name.lower()
                 start, end = None, None
 
                 if self.config.DISPLAY_PLAYER_ICON is False:
@@ -57,6 +56,7 @@ class RPC:
 
                 artists = ", ".join(str(artist) for artist in track.playable.artists)
                 state = f"by {artists}"
+                small_image = player_name.lower()
 
                 if self.config.DISPLAY_PROGRESS is True:
                     start, end = self._calculate_ts(track)
