@@ -1,5 +1,5 @@
 # ncspot-rpc
-![PyPI Version](https://img.shields.io/pypi/v/ncspot-rpc)
+![PyPI Version](https://img.shields.io/pypi/v/ncspot-rpc?style=social)
 ![Python Version](https://img.shields.io/pypi/pyversions/ncspot-rpc)
 ![License](https://img.shields.io/github/license/linuxlarp/ncspot-rpc)
 ![Stars](https://img.shields.io/github/stars/linuxlarp/ncspot-rpc)
